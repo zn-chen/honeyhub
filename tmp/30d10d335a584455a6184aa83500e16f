@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker run -it --rm -p 2222:2222\
+        -e IDENT=30d10d335a584455a6184aa83500e16f \
+        -e NAME=随便 \
+        -e DESCRIBE=天津奥恩和覅耦合哇哦i发货金额我i发额外 \
+        -e HONEYPOT_HOST=192.168.140.171 \
+        -e HONEYPOT_PORT=2222 \
+        -e RABBIT_HOST=192.168.140.148 \
+        -e RABBIT_PORT=5672 \
+        -e RABBIT_USERNAME=guest \
+        -e RABBIT_PASSWORD=guest \
+        -e SERVER_HOST=192.168.140.148 \
+        -e SERVER_PORT=80 \
+        cowriex:2.0.0

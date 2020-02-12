@@ -1,0 +1,26 @@
+[Base]
+level = DEBUG
+addr = 192.168.140.148
+port = 80
+db_name = center
+
+[RabbitMQ]
+addr = 192.168.140.148
+port = 5672
+vhost = message
+username = guest
+password = guest
+max_pool_size = 20
+
+[MongoDB]
+addr = 127.0.0.1
+port = 27017
+max_pool_size = 20
+min_pool_size = 5
+collector = collector
+
+[Collector]
+warehouse = collector
+
+[Manager]
+beat_interval = 40

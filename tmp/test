@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker run -it --rm -p 2222:2222\
+        -e IDENT=123 \
+        -e NAME=123 \
+        -e DESCRIBE=#DESCRIBE# \
+        -e HONEYPOT_HOST=#HONEYPOT_HOST# \
+        -e HONEYPOT_PORT=#HONEYPOT_PORT# \
+        -e RABBIT_HOST=#RABBIT_HOST# \
+        -e RABBIT_PORT=#RABBIT_PORT# \
+        -e RABBIT_USERNAME=#RABBIT_USERNAME# \
+        -e RABBIT_PASSWORD=#RABBIT_PASSWORD# \
+        -e SERVER_HOST=#SERVER_HOST# \
+        -e SERVER_PORT=#SERVER_PORT# \
+        cowriex:2.0.0

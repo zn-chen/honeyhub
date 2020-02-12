@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker run -it --rm -p 2222:2222\
+        -e IDENT=911b7f7379f24cf2a457343dbab4c74c \
+        -e NAME=test \
+        -e DESCRIBE=测试 \
+        -e HONEYPOT_HOST=192.168.140.171 \
+        -e HONEYPOT_PORT=2222 \
+        -e RABBIT_HOST=127.0.0.1 \
+        -e RABBIT_PORT=5672 \
+        -e RABBIT_USERNAME=guest \
+        -e RABBIT_PASSWORD=guest \
+        -e SERVER_HOST=192.168.140.148 \
+        -e SERVER_PORT=80 \
+        cowriex:2.0.0
